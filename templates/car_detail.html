@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _("Car Details") }} - {{ car.make }} {{ car.model }}{% endblock %}
+
+{% block page_title %}{{ car.make }} {{ car.model }}{% endblock %}
+
+{% block content %}
+    <h2>{{ _("Specifications") }}</h2>
+    <div id="specs">
+        <p>{{ _("Year") }}: {{ car.year if car.year else 'N/A' }}</p>
+        <p>{{ _("Engine") }}: {{ car.engine if car.engine else 'N/A' }}</p>
+        <p>{{ _("Horsepower") }}: {{ car.horsepower if car.horsepower else 'N/A' }}</p>
+        <p>{{ _("Other Specs") }}: {{ car.other_specs if car.other_specs else 'N/A' }}</p>
+    </div>
+    <hr>
+    <h2>{{ _("Images") }}</h2>
+    <div id="images">
+        {% if images %}
+            <div class="car-images">
+                {% for image in images %}
+                <div class="car-image-item">
+                    <img src="{{ url_for('static', filename='uploads/' + image.image_filename) }}" alt="{{ _('Image for') }} {{ car.make }} {{ car.model }}">
+                    {% if image.caption %}
+                        <p>{{ image.caption }}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>{{ _("No images available for this car yet.") }}</p>
+        {% endif %}
+    </div>
+    <a href="{{ url_for('index_route') }}">{{ _("Back to Homepage") }}</a>
+{% endblock %}

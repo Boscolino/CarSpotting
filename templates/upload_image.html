@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _("Upload Image") }}{% endblock %}
+
+{% block page_title %}{{ _("Upload Image for Car") }}{% endblock %}
+
+{% block content %}
+    <form method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="car_id">{{ _("Select Car") }}:</label>
+            <select name="car_id" id="car_id" required>
+                {% for car in cars %}
+                    <option value="{{ car.id }}">{{ car.make }} {{ car.model }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label for="image">{{ _("Choose Image") }}:</label>
+            <input type="file" name="image" id="image" accept="image/*" required>
+        </div>
+        <div>
+            <label for="caption">{{ _("Caption (Optional)") }}:</label>
+            <input type="text" name="caption" id="caption" placeholder="{{ _('E.g., Front view') }}">
+        </div>
+        <div>
+            <input type="submit" value="{{ _('Upload') }}">
+        </div>
+    </form>
+    <a href="{{ url_for('index_route') }}">{{ _("Back to Homepage") }}</a>
+{% endblock %}

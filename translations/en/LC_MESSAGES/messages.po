@@ -1,0 +1,99 @@
+# English translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-05-28 06:40+0000\n"
+"PO-Revision-Date: 2025-05-28 06:44+0000\n"
+"Last-Translator: AutoTranslator\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app.py:59
+msgid "Welcome to Car Specs"
+msgstr "Welcome to Car Specs"
+
+#: templates/car_detail.html:3
+msgid "Car Details"
+msgstr "Car Details"
+
+#: templates/car_detail.html:8
+msgid "Specifications"
+msgstr "Specifications"
+
+#: templates/car_detail.html:10
+msgid "Year"
+msgstr "Year"
+
+#: templates/car_detail.html:11
+msgid "Engine"
+msgstr "Engine"
+
+#: templates/car_detail.html:12
+msgid "Horsepower"
+msgstr "Horsepower"
+
+#: templates/car_detail.html:13
+msgid "Other Specs"
+msgstr "Other Specs"
+
+#: templates/car_detail.html:16
+msgid "Images"
+msgstr "Images"
+
+#: templates/car_detail.html:22
+msgid "Image for"
+msgstr "Image for"
+
+#: templates/car_detail.html:30
+msgid "No images available for this car yet."
+msgstr "No images available for this car yet."
+
+#: templates/car_detail.html:33 templates/upload_image.html:29
+msgid "Back to Homepage"
+msgstr "Back to Homepage"
+
+#: templates/index.html:8
+msgid "Available Cars"
+msgstr "Available Cars"
+
+#: templates/index.html:17
+msgid "No cars found."
+msgstr "No cars found."
+
+#: templates/upload_image.html:3
+msgid "Upload Image"
+msgstr "Upload Image"
+
+#: templates/upload_image.html:5
+msgid "Upload Image for Car"
+msgstr "Upload Image for Car"
+
+#: templates/upload_image.html:10
+msgid "Select Car"
+msgstr "Select Car"
+
+#: templates/upload_image.html:18
+msgid "Choose Image"
+msgstr "Choose Image"
+
+#: templates/upload_image.html:22
+msgid "Caption (Optional)"
+msgstr "Caption (Optional)"
+
+#: templates/upload_image.html:23
+msgid "E.g., Front view"
+msgstr "E.g., Front view"
+
+#: templates/upload_image.html:26
+msgid "Upload"
+msgstr "Upload"
